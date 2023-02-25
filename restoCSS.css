@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main-div {
+    padding-left: 20px;
+    padding-right: 20px;
+    background:white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-div {
+    width: 10px;
+    height: 60px;
+    margin: 9px;
+}
+
+.lists {
+    display: flex;
+    flex-direction:row;
+    list-style-type: none;
+}
+
+.nav-item {
+    font-size: 21px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 30px;
+    text-decoration: none;
+    color: 086c94;
+}
+
+.home-body {
+    background-image: url("https://lapinozpizza.in/assets/wla_new/lapinoz/img/banner3.jpg");
+    background-size: 100% 619px;
+    background-repeat: no-repeat;
+}
+
+.banner {
+    padding-top: 40px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.639);
+    height: 495px;
+}
+
+.btnDownload{
+    margin-top: 5px;
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+}
+
+.deals {
+    padding: 3%;
+}
+
+.offers {
+    margin-top: 20px;
+    display: flex;
+    padding-right: 12%;
+    justify-content: space-between;
+}
+
+.menu {
+    padding: 3%;
+    background-color: rgba(0, 0, 0, 0.043);
+}
+
+.img-zoom {
+    display: block;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.img-zoom:hover{
+    transform: scaleX(1.2);
+}
+
+.row1 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.row2 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.row3 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.card-view {
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.176);
+    width: 290px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.card-view2 {
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.176);
+    height: 100%;
+    width: 290px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.card-label {
+    padding: 9px;
+}
+
+.our-story {
+    padding: 3%;
+    
+}
+
+.story {
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 18px;
+    color: rgb(86, 86, 86);
+    line-height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 12%;
+    padding-right: 22%;
+}
+
+.international {
+    text-align: center;
+    margin: auto auto;
+    margin-top: 90px;
+    width: 50%;
+    padding: 2%;
+}
+
+.franchise {
+    padding: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgba(0, 0, 0, 0.043);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.family {
+    width: 45%;
+}
+
+.ipField {
+    height: 45px;
+    width: 207px;
+    margin: 10px;
+    padding: 9px;
+}
+
+.increDecre {
+    margin-top: 5px;
+}
+
+.minus, .plus, .num {
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    background: transparent;
+    border: none;
+}
+
+.order {
+    margin-left: 90px;
+    border-radius: 10px;
+    height: 25px;
+    border: 1px;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.048);
+}
+
+.textarea1{
+    size-adjust: none;
+    padding: 9px;
+    width: 95%;
+    height: 100px;
+    margin: 10px;
+}
+
+.btnSubmit {
+    height: 40px;
+    width: 300px;
+    font-size: 18px;
+    background-color: green;
+    color: white;
+    border-radius: 25px;
+    border: none;
+}
+
+.contact-us {
+    padding: 3%;
+    text-align: center;
+}
+
+.contact-details {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.contact-address {
+    width: 20%;
+}
+
+.card-view3 {
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.176);
+    height: 180px;
+    width: 290px;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 2%;
+}
+
+.ipField2 {
+    height: 45px;
+    width: 32.6%;
+    margin: 10px;
+    padding: 9px;
+    font-size: 16px;
+}
+
+.contact-textarea {
+    font-size: 16px;
+    size-adjust: none;
+    padding: 9px;
+    width: 67%;
+    height: 20%;
+    margin: 10px;
+}
+
+.submitForm {
+    width: 10%;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 25px;
+}
+
+footer {
+    padding: 100px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: white;
+    text-align: left;
+    background-color: rgb(3, 154, 3)
+}
+
+.footer-main {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.underline2 {
+    width: 100px;
+    height: 2px;
+    background-color: orange;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    width: 300px;
+    text-decoration: none;
+}
+
+.footer-navi {
+    width: 300px;
+}
+
+.footer-navi-item {
+    width: 300px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    margin: 9px;
+}
+.footer-navi-item:hover {
+    margin-left: 15px;
+}
+
+.underline {
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    margin: auto auto;
+}

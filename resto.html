@@ -1,0 +1,396 @@
+<html>
+
+    <head>
+        <title> La Pino'z Pizza </title>
+        <link rel="stylesheet" href="restoCSS.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="restoJS.js"></script>
+    </head>
+
+    <body class="home-body">
+
+<!--//////////////////////////////////// NAVIGATION ////////////////////////////////////-->
+
+        <header>
+            <div class="main-div">
+                <div class="image-div">
+                    <img width="150px" height="60px" src = "https://www.uengage.in/images/addo/logos/lapinoz-logo.png">
+                </div>
+                <div class="lists">
+                    <label class="nav-item" onclick="scrollToDeals();">Home</label>
+                    <label class="nav-item" onclick="scrollToMenu();">Best Seller</label>
+                    <label class="nav-item" onclick="scrollToStory();">Our Story</label>
+                    <label class="nav-item" onclick="scrollToFrenchies();">Frenchise Enquiry</label>
+                    <label class="nav-item" onclick="scrollToContact();">Contact Us</label>
+                </div>
+            </div>
+        </header>
+
+<!--//////////////////////////////////// BENNER ////////////////////////////////////-->
+
+        <div class="banner">
+            <label style="color:white; font-size: 50px;"> MORE THAN 450+ OUTLETS </label> <br>
+            <label style="color:yellow; font-size: 50px;"> LIVE ACROSS INDIA </label> <br> <br> <br> <br>
+
+            <label style="color:white; font-size: 50px;"> THE GIANT PIZZA SLICES </label> <br>
+            <label style="color:yellow; font-size: 50px;"> NOW AVAILABLE IN YOUR CITY </label> <br> <br> <br> <br>
+
+            <label style="color: white; font-size: 30px;"> DOWNLOAD THE APP FOR PLACE YOUR ORDER </label> <br>
+            <button class="btnDownload"> Download Now </button>
+        </div>
+
+<!--//////////////////////////////////// DEALS & OFFERS ////////////////////////////////////-->
+
+        <div class="deals" id="divFirst">
+            <label style="font-size: 31px;"> Deals & Offers </label>
+            <div class="offers">
+                <img style="border-radius: 20px;" width="400px" height="200px" src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/deals-banner.jpg">
+                <img style="border-radius: 20px;" width="400px" height="200px" src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/deals-banner-two.jpg">
+                <img style="border-radius: 20px;" width="400px" height="200px" src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/deals-banner-three.jpg">
+            </div>
+        </div>
+
+<!--//////////////////////////////////// BEST SELLERS ////////////////////////////////////-->
+
+        <div class="menu" id="divSecond">
+            <label style="font-size: 31px;"> Best Sellers </label>
+            <div class="pizza">
+
+                <div class="row1">
+                    <!-- pizza 1 -->
+                    <div class="card-view">
+                        <figure class="img-zoom">
+                            <img height="300px" width="300px" src="https://static.uengage.in/uploads/5/image-463536-1595939022.jpeg">
+                        </figure>
+                        <div class="card-label">
+                            <label style="font-size: 18px;"> English Retreat Pizza </label> <br>
+                            <label style="color:gray;"> ₹ 245 </label>
+                            <div class="increDecre">
+                                <button class="minus"> - </button>
+                                <input type="text" class="num" size="5px" readonly="" value="0">
+                                <button class="plus"> + </button>
+                                <button class="order"> Place Order </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- pizza 2 -->
+                    <div class="card-view">
+                        <figure class="img-zoom">
+                            <img height="300px" width="300px" src="https://static.uengage.in/uploads/5/image-7839-1654761657.jpg">
+                        </figure>
+                        <div class="card-label">
+                            <label style="font-size: 18px;"> Cheezy-7 Pizza </label> <br>
+                            <label style="color:gray;" > ₹ 225 </label>
+                            <div class="increDecre">
+                                <button class="minus"> - </button>
+                                <input type="text" class="num" size="5px" readonly="" value="0">
+                                <button class="plus"> + </button>
+                                <button class="order"> Place Order </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- pizza 3 -->
+                    <div class="card-view">
+                        <figure class="img-zoom">
+                            <img  height="300px" width="300px" src="https://static.uengage.in/uploads/5/image-7493-1654761662.jpg">
+                        </figure>
+                        <div class="card-label">
+                            <label style="font-size: 18px;"> Paneer Tikka Butter Masala Pizza </label> <br>
+                            <label style="color:gray"> ₹ 250 </label>
+                            <div class="increDecre">
+                                <button class="minus"> - </button>
+                                <input type="text" class="num" size="5px" readonly="" value="0">
+                                <button class="plus"> + </button>
+                                <button class="order"> Place Order </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="row2">
+                    <!-- pizza 4 -->
+                    <div class="card-view">
+                        <figure class="img-zoom">
+                            <img height="300px" width="300px" src="https://static.uengage.in/uploads/5/image-8255-1654761665.jpg">
+                        </figure>
+                        <div class="card-label">
+                            <label style="font-size: 18px;"> Farm Villa Pizza </label> <br>
+                            <label style="color:gray"> ₹ 185 </label>
+                            <div class="increDecre">
+                                <button class="minus"> - </button>
+                                <input type="text" class="num" size="5px" readonly="" value="0">
+                                <button class="plus"> + </button>
+                                <button class="order"> Place Order </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- pizza 5 -->
+                    <div class="card-view">
+                        <figure class="img-zoom">
+                            <img height="300px" width="300px" src="https://static.uengage.in/uploads/5/image-6672-1654761670.jpg">
+                        </figure>
+                        <div class="card-label">
+                            <label style="font-size: 18px;"> Korma Special Pizza </label> <br>
+                            <label style="color:gray"> ₹ 245 </label>
+                            <div class="increDecre">
+                                <button class="minus"> - </button>
+                                <input type="text" class="num" size="5px" readonly="" value="0">
+                                <button class="plus"> + </button>
+                                <button class="order"> Place Order </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- pizza 6 -->
+                    <div class="card-view">
+                        <figure class="img-zoom">
+                            <img height="300px" width="300px" src="https://static.uengage.in/uploads/5/image-1332-1654761675.jpg">
+                        </figure>
+                        <div class="card-label">
+                            <label style="font-size: 18px;"> Las Vegas Treat Pizza </label> <br>
+                            <label style="color:gray"> ₹ 245 </label>
+                            <div class="increDecre">
+                                <button class="minus"> - </button>
+                                <input type="text" class="num" size="5px" readonly="" value="0">
+                                <button class="plus"> + </button>
+                                <button class="order"> Place Order </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row3">
+                    <!-- pizza 7 -->
+                    <div class="card-view">
+                        <figure class="img-zoom">
+                            <img height="300px" width="300px" src="https://static.uengage.in/uploads/5/image-1578568905.jpeg">
+                        </figure>
+                        <div class="card-label">
+                            <label style="font-size: 18px;"> Spring Fling Pizza </label> <br>
+                            <label style="color:gray"> ₹ 185 </label>
+                            <div class="increDecre">
+                                <button class="minus"> - </button>
+                                <input type="text" class="num" size="5px" readonly="" value="0">
+                                <button class="plus"> + </button>
+                                <button class="order"> Place Order </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- pizza 8-->
+                    <div class="card-view">
+                        <figure class="img-zoom">
+                            <img  height="300px" width="300px" src="https://static.uengage.in/uploads/5/image-581856-1595939022.jpeg">
+                        </figure>
+                        <div class="card-label">
+                            <label style="font-size: 18px;"> Marghirita Pizza </label> <br>
+                            <label style="color:gray"> ₹ 110 </label>
+                            <div class="increDecre">
+                                <button class="minus"> - </button>
+                                <input type="text" class="num" size="5px" readonly="" value="0">
+                                <button class="plus"> + </button>
+                                <button class="order"> Place Order </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- pizza 9 -->
+                    <div class="card-view">
+                        <figure class="img-zoom">
+                            <img height="300px" width="300px" src="https://static.uengage.in/uploads/5/image-463536-1595939022.jpeg">
+                        </figure>
+                        <div class="card-label">
+                            <label style="font-size: 18px;"> Burn to Hell Pizza </label> <br>
+                            <label style="color:gray"> ₹ 225 </label>
+                            <div class="increDecre">
+                                <button class="minus"> - </button>
+                                <input type="text" class="num" size="5px" readonly="" value="0">
+                                <button class="plus"> + </button>
+                                <button class="order"> Place Order </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--//////////////////////////////////// OUR STORY ////////////////////////////////////-->
+
+        <div class="our-story" id="divThird">
+            <label style="font-size: 31px;"> Our Story </label>
+            
+            <div class="story">
+                <p style="width: 45%;"> The story of India's fastest growing pizza place started back in 2011 when Sanam Kapoor opened his very first pizzeria in his hometown Chandigarh. Inspired by his own search for delicious pizza options, he started to wonder if there was a better way of doing pizza- and business. The last thing the world needed was another pizzeria, but maybe this one could be different and everyone could get exactly what they wanted, made fresh on demand. It all started sounding pretty great, and soon Sanam was opening the first La Pino'z in his hometown Chandigarh and there was no looking back. As of today, La Pino'z has 350+ outlets across India with the recent one opening in London. </p>
+                <img style="border-radius: 25px;" width="300" height="300" src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/sanam-kapoor.jpg">
+            </div>
+
+            <div class="international card-view">
+                <h2> La Pino'z Goes International </h2>
+                <lable> Launching soon in </lable>
+
+                <div class="row1">
+                    <div>
+                        <img style="border-radius: 50px;" height="100px" width="100px" src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/canada.png">
+                        <div>
+                            <label style="font-size: 18px;"> Canada </label> <br>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img style="border-radius: 50px;" height="100px" width="100px" src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/united-kingdom.png">
+                        <div>
+                            <label style="font-size: 18px;"> United Kingdom </label> <br>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img style="border-radius: 50px;" height="100px" width="100px" height="300px" width="300px" src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/australia.png">
+                        <div>
+                            <label style="font-size: 18px;"> Australia </label> <br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row2" style="margin-top: 20px; padding-left: 25%; padding-right: 25%;" >
+                    <div>
+                        <img style="border-radius: 50px;" height="100px" width="100px" src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/dubai.png">
+                        <div>
+                            <label style="font-size: 18px;"> Dubai </label> <br>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img style="border-radius: 50px;" height="100px" width="100px" src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/tanzania.png">
+                        <div>
+                            <label style="font-size: 18px;"> Tanzania </label> <br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+<!--//////////////////////////////////// FRENCHISE ////////////////////////////////////-->
+
+        <div class="franchise" id="divFourth">
+            <div class="family">
+                <h4 style="margin-bottom:10px"> BE YOUR OWN BOSS </h4>
+                <lable style="font-size: 31px;"> JOIN THE <B> LA PINO'Z </B> FAMILY </lable> 
+                <p style="margin-top:10px" style="line-height: 23px;">Are you looking for a franchise opportunity that focuses on good, quality food? If yes, then we are proud to offer pizza franchise opportunities across the states to people who have the same goals as we do: To serve great food made from fresh ingredients in a great atmosphere.</p> <br>
+                <p style="line-height: 23px;">Investing in La Pinoz franchise gives you the independence of being a business owner along with the support of our outstanding brand and experienced network. So be a part of the bigger network and a winning brand that keeps customers coming back for delicious Pizzas just the way they want!</p>
+            </div>
+
+            <div class="details">
+                <h2> Share Your Details </h2>
+                <div>
+                    <input type="text" class="ipField" placeholder="FirstName">
+                    <input type="text" class="ipField" placeholder="Last Name">
+                </div>
+                <div>
+                    <input type="text" class="ipField" placeholder="City">
+                    <input type="text" class="ipField" placeholder="Contact Number">
+                </div>
+                <div>
+                    <input type="text" class="ipField" placeholder="Email ID">
+                </div>
+                <div>
+                    <textarea class="textarea1" placeholder="Enter Message"></textarea> <br>
+                    <button style="margin:auto auto;" class="btnSubmit"> Send Message </button>
+                </div>
+            </div>
+        </div>
+
+<!--//////////////////////////////////// CONTACT US ////////////////////////////////////-->
+
+        <div class="contact-us" id="divFifth">
+            <label style="font-size: 31px; color: green;"> WE WOULD LOVE TO HEAR FROM YOU </label>
+            <p style="margin-top: 5px;"> Drop a line to say hello </p>
+            <div class="contact-details">
+                <div class="contact-address card-view3">
+                    <i style="color: green;" class="fa-solid fa-map-location-dot fa-4x"></i>
+                    <h2 style="margin: 10px;"> Address </h2>
+                    <p>Booth No. 10, Sector 9-D, Inner Market, Chandigarh, 160009</p>
+                </div>
+                <div class="contact-email card-view3">
+                    <i style="color: green;" class="fa-solid fa-envelope fa-4x"></i>
+                    <h2 style="margin: 10px;"> Email </h2>
+                    <p>copenhagenhospitalityandretail@yahoo.com</p>
+                </div>
+                <div class="contact-phone card-view3">
+                    <i style="color: green;" class="fa-solid fa-phone fa-4x"></i>
+                    <h2 style="margin: 10px;"> Phone </h2>
+                    <p>0176-2509231</p>
+                </div>
+            </div>
+
+            <h2 style="margin-top: 40px;"> Contact Us </h2>
+            <div class="contact-form">
+                <div>
+                    <input type="text" class="ipField2" placeholder="FirstName">
+                    <input type="text" class="ipField2" placeholder="Last Name">
+                </div>
+                <div>
+                    <input type="text" class="ipField2" placeholder="Email ID">
+                    <input type="text" class="ipField2" placeholder="Contact Number">
+                </div>
+                <div>
+                    <textarea class="contact-textarea" placeholder="Write your message..."></textarea> <br>
+                    <button class="submitForm"> Submit </button>
+                </div>
+
+            </div>
+        </div>
+
+<!--//////////////////////////////////// FOOTER ////////////////////////////////////-->
+
+        <footer>
+            <div class="footer-main">
+                <div class="footer-links">
+                    <h3 style="margin-bottom: 20px;"> Useful Links </h3>
+                    <a style="text-decoration: none; color: white;" href=""> Refund Policy </a> <br>
+                    <a style="text-decoration: none; color: white;" href=""> Terms & Conditions </a><br>
+                    <a style="text-decoration: none; color: white;" href=""> Private Policy </a><br>
+                    <a style="text-decoration: none; color: white;" href=""> Promo Codes </a>
+                </div>
+                <div class="footer-navi">
+                    <h3 style="margin-bottom:20px;"> Payment Methods </h3>
+                    <img height="30" width="50" style="border-radius: 5px;" src="https://lapinozpizza.in/assets/wla_new/img/visa.png">
+                    <img height="30" width="50" style="border-radius: 5px;" src="https://lapinozpizza.in/assets/wla_new/img/google-pay.png">
+                    <img height="30" width="50" style="border-radius: 5px;" src="https://lapinozpizza.in/assets/wla_new/img/paytm.png">
+                    <img height="30" width="50" style="border-radius: 5px;" src="https://lapinozpizza.in/assets/wla_new/img/master-card.png">
+                </div>
+                <div classs="footer-follow">
+                    <h3 style="margin-bottom:20px;">Connect With Us</h3>
+                    <a href="https://www.facebook.com/profile.php?id=100009719227175">
+                        <i style="margin: 9px; color: white;  text-decoration: none;" class="fa-brands fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/meetpatadia9/?fbclid=IwAR05zM3jPAEfBn22nElv7cwYxLhO9KTimO66HR2d5TelMZLVTJKssy20euo">
+                        <i style="margin: 9px; color: white; text-decoration: none;" class="fa-brands fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/meet-patadia-858520217/">
+                        <i style="margin: 9px; color: white;  text-decoration: none;" class="fa-brands fa-linkedin fa-2x"></i>    
+                    </a>
+                    <a href="https://twitter.com/meetpatadia9?fbclid=IwAR3O8pY8Z4gjK5zhftY4RHNbC3aBRIczOHKCdNzkFodbAOUYVoLzRryHvhU">
+                        <i style="margin: 9px; color: white;  text-decoration: none;" class="fa-brands fa-twitter fa-2x"></i>
+                    </a>
+                    <br>
+                    <a style="text-decoration: none;" href="mailto:patadiam09@gmail.com">
+                        <i style="margin-top: 20px; color: white;  text-decoration: none;" class="fa-regular fa-envelope fa-2x"></i> 
+                    </a>
+                    <lable style="color: white; font-size: 18px; margin: 2px;"> copenhagenhospitalityandretail@yahoo.com </lable>
+                    <br>
+                    <i style="margin-top: 20px; color: white;  text-decoration: none;" class="fa-solid fa-phone fa-2x"></i> 
+                    <lable style="color: white; font-size: 18px; margin: 2px;"> +91 01762509231 </lable>
+                </div>  
+            </div>
+            <div class="underline"></div>
+            <p style="color: white; margin-top: 40px; text-align: center; font-size: 18px;">Made with Love in India by Uengage. Copyright © 2022 Reserved </p>
+        </footer>
+
+
+    </body>
+</html>
